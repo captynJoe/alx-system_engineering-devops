@@ -2,13 +2,13 @@
 # displays Best School 10 times.
 
 COUNTER=0
-while [ $COUNTER -lt 11 ]
+while [ $i -le 10 ]
 do
-    if [ $COUNTER = 9 ]
+    echo "Best School"
+    if [ "$i" -eq 9 ]
     then
         echo "Hi"
-    else
-        echo "Best School"
     fi
-    let COUNTER+=1
+    
+    ((i++))
 done
